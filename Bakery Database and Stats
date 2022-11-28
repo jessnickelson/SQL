@@ -1,0 +1,25 @@
+CREATE TABLE bakery (id INTEGER PRIMARY KEY, name TEXT, category TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO bakery VALUES
+(1, "Pumpernickel", "bread", 5, 4.50),
+(2, "Sourdough", "bread", 10, 5.00),
+(3, "French Bread", "bread", 12, 3.50),
+(4, "Everything Bagel", "bagel", 12, 1.75),
+(5, "Plain Bagel", "bagel", 12, 1.50),
+(6, "Cinnamon Swirl Bagel", "bagel", 10, 2.00),
+(7, "Pumpkin Muffin", "pastry", 12, 2.50),
+(8, "Poppyseed Muffin", "pastry", 12, 2.50),
+(9, "Lemon Bar", "pastry", 20, 1.75),
+(10, "Cranberry Cream Bar", "pastry", 20, 2.00),
+(11, "Snickerdoodle", "cookie", 36, 1.25),
+(12, "Chocolate Chip", "cookie", 36, 1.25),
+(13, "Croissant","pastry", 24, 2.00),
+(14, "Chocolate Croissant", "pastry", 24, 2.50),
+(15, "Mini Quiche", "pastry", 50, 3.00)
+;
+
+SELECT * FROM bakery ORDER BY price asc;
+
+SELECT * FROM bakery ORDER BY category;
+
+SELECT * FROM bakery ORDER BY quantity desc limit 5;
